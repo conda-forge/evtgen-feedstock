@@ -10,10 +10,11 @@ source:
   sha256: bf07539eea9a2a8d41b8420dabeba1dbae24f04891f63b727247201f435f3256
   patches:
     - 0001-Add-cmath-include-to-EvtMatrix.hh.patch
+    - 0001-Fix-compilation-with-Pythia-8.304.patch
 
 build:
   skip: true  # [win]
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage('evtgen', max_pin='x.x') }}
 

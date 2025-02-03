@@ -1,5 +1,5 @@
 {% set name = "evtgen" %}
-{% set version = "2.02.01" %}
+{% set version = "2.02.03" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://evtgen.hepforge.org/downloads?f=EvtGen-0{{ version }}.tar.gz
-  sha256: 1fcae56c6b27b89c4a2f4b224d27980607442185f5570e961f6334a3543c6e77
+  sha256: b642700b703190e3304edb98ff464622db5d03c1cfc5d275ba4a628227d7d6d0
 
 build:
   skip: true  # [win]
@@ -19,6 +19,7 @@ requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
+    - {{ stdlib('c') }}
     - cmake
     - make
   host:

@@ -21,7 +21,6 @@ amplitudes are used to generate each branch of a given full decay tree,
 taking into account angular and time-dependent correlations which allows
 for the simulation of CP-violating processes.
 
-
 Current build status
 ====================
 

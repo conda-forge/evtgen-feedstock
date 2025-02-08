@@ -9,7 +9,8 @@ package:
   version: ${{ version|replace(".0", ".") }}
 
 source:
-  url: https://evtgen.hepforge.org/downloads?f=EvtGen-0${{ version }}.tar.gz
+  url: "https://evtgen.hepforge.org/downloads?f=EvtGen-0${{ version }}.tar.gz"
+  file_name: EvtGen-0${{ version }}.tar.gz
   sha256: b642700b703190e3304edb98ff464622db5d03c1cfc5d275ba4a628227d7d6d0
 
 build:

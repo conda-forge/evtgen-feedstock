@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+tar xvf EvtGen-*.tar.gz
+cd EvtGen/
+
 mkdir build && cd build
 
 cmake \
@@ -14,7 +17,7 @@ cmake \
 cmake --build . --target install "-j${CPU_COUNT}"
 
 # Put the license into a more predictable location
-cp ../R0*/COPYING ../COPYING
+cp ../R0*/COPYING $SRC_DIR/COPYING
 
 # Add the post activate/deactivate scripts
 mkdir -p "${PREFIX}/etc/conda/activate.d"
